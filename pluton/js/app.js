@@ -377,17 +377,17 @@ $("#send-mail").click(function () {
 
 function initializeMap() {
 
-    var lat = '44.8164056'; //Set your latitude.
-    var lon = '20.46090424'; //Set your longitude.
+    var lat = '13.0294488'; //Set your latitude.80.2415471
+    var lon = '80.246022'; //Set your longitude.
 
     var centerLon = lon - 0.0105;
 
     var myOptions = {
         scrollwheel: false,
-        draggable: false,
+        draggable: true,
         disableDefaultUI: true,
         center: new google.maps.LatLng(lat, centerLon),
-        zoom: 15,
+        zoom: 17,
         mapTypeId: google.maps.MapTypeId.ROADMAP
     };
 
@@ -400,7 +400,7 @@ function initializeMap() {
     });
 
     var infowindow = new google.maps.InfoWindow({
-        content: "Your content goes here!"
+        content: "FRIGOSCAN POST HARVEST TECHNOLOGIES PVT.LTD." +" \nPasumpon Muthuramalinga Tevar Rd, \n Y Block, Teynampet, Chennai, Tamil Nadu 600018"
     });
 
     google.maps.event.addListener(marker, 'click', function () {
